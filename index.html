@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framework Challenge</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @layer utilities {
+            .text-neon-green {
+                color: #00ff00;
+                text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+            }
+
+            .cursor-blink::after {
+                content: '|';
+                animation: blink 1s step-start infinite;
+            }
+
+            @keyframes blink {
+                50% {
+                    opacity: 0;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-black font-mono text-neon-green min-h-screen flex items-center justify-center">
+    <main class="w-full max-w-4xl p-6">
+        <div class="mb-2">GREETINGS</div>
+        <div class="cursor-blink mb-2">SHALL WE PLAY A GAME</div>
+
+        <div class="bg-black border border-green-400 p-4 mb-4 shadow-lg">
+            <p class="mb-2">TITLE: WarGames (1983)</p>
+            <p class="mb-2">TAGLINE: Is it a game, or is it real?</p>
+            <p class="mb-2">DIRECTOR: John Badham</p>
+            <p class="mb-2">WRITERS: Lawrence Lasker, Walter F. Parkes</p>
+            <p class="mb-2">MAIN CAST:</p>
+            <ul class="list-disc list-inside space-y-1">
+                <li>Matthew Broderick as David Lightman</li>
+                <li>Ally Sheedy as Jennifer Mack</li>
+                <li>Dabney Coleman as Dr. John McKittrick</li>
+                <li>John Wood as Dr. Stephen Falken / WOPR (voice)</li>
+                <li>Barry Corbin as Gen. Jack Beringer</li>
+            </ul>
+        </div>
+
+        <div class="bg-black border border-green-400 p-4 mb-4 shadow-lg">
+            <p class="mb-2">PLOT:</p>
+            <p>A young computer hacker unwittingly accesses a United States military supercomputer programmed to
+                simulate, predict and execute nuclear war against the Soviet Union, triggering a false alarm that
+                threatens to start World War III.</p>
+        </div>
+
+        <div class="bg-black border border-green-400 p-4 mb-4 shadow-lg">
+            <p class="mb-2">FUN FACTS:</p>
+            <p class="mb-2">At the 56th Academy Awards, the film was nominated for three Oscars, including Best Original Screenplay. It also won a BAFTA Award for Best Sound.</p>
+            <p class="mb-2">The film is credited with popularizing concepts of computer hacking, information technology, and cybersecurity in wider American society.</p>
+            <p class="mb-2">The studio had the Galaxian (1979) and Galaga (1981) arcade machines delivered to Matthew
+                Broderick's home. He practiced for two months to prepare for the arcade scene.</p>
+            <p class="mb-2">The WOPR, as seen in the movie, was made of wood and painted with a metal-finish paint. As
+                the crew filmed the displays of the WOPR, Special Effects Supervisor Michael L. Fink sat inside and
+                entered information into an Apple II computer that drove the countdown display.</p>
+            <p class="mb-2">President Reagan was fascinated with the film. He signed a classified national security
+                directive because of it. It was the first computer security directive given by a president.</p>
+        </div>
+
+        <img alt="WarGames (1983) Poster" src="poster.jpg">
+    </main>
+
+
+</body>
+
+</html>
